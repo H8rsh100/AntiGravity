@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Antigravity AI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <canvas id="canvas"></canvas>
+
+  <div class="ui">
+
+    <div class="brand">
+      <h1>ANTI<span>GRAVITY</span></h1>
+      <p>AI Particle Simulator</p>
+    </div>
+
+    <div class="chat-panel">
+      <div class="chat-messages" id="chatMessages">
+        <div class="msg ai">
+          Hey! I control this particle simulation. Tell me what you want — try <em>"make it rain fire"</em> or <em>"go antigravity"</em>!
+        </div>
+      </div>
+
+      <div class="suggestions">
+        <button class="sug" data-prompt="make it rain fire">🔥 rain fire</button>
+        <button class="sug" data-prompt="go antigravity">🚀 antigravity</button>
+        <button class="sug" data-prompt="black hole mode">🌀 black hole</button>
+        <button class="sug" data-prompt="slow and peaceful">❄️ peaceful</button>
+        <button class="sug" data-prompt="chaotic explosion maximum particles">💥 chaos</button>
+        <button class="sug" data-prompt="cosmic purple deep space vibes">🌌 cosmic</button>
+      </div>
+
+      <div class="input-area">
+        <input type="text" id="userInput" placeholder="Describe what you want..." autocomplete="off"/>
+        <button id="sendBtn">→</button>
+      </div>
+    </div>
+
+    <div class="hint">🖱 Move to repel · Click to attract · Scroll = gravity</div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
